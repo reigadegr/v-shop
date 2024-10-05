@@ -57,6 +57,7 @@ instance.interceptors.request.use((config: AxiosRequestConfig) => {
 instance.interceptors.response.use(
   (response: AxiosResponse<any>) => {
     const result: ServiceResult = response.data;
+    console.log(result)
     const { code } = result;
 
     // 不进行任何处理，直接返回原生响应

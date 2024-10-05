@@ -17,7 +17,7 @@ const loginProvider = computed(() => {
   return loginProviderType[unref(loginType)] || {};
 });
 const checkTypeText = computed(() => {
-  return unref(loginType) === 'sms' ? '密码登录' : '验证码登录';
+  return unref(loginType) === 'sms' ? '密码登录' : '验证码1登录';
 });
 
 function onLoginTypeChange() {

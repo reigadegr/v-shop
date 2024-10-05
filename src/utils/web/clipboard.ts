@@ -42,9 +42,7 @@ function legacyCopy(data: string) {
 
 function legacyRead() {
   const pasteText = document.getElementById('#clipboard') as HTMLTextAreaElement | null;
-  const data = pasteText ? pasteText.value : '';
-
-  return data;
+  return pasteText ? pasteText.value : '';
 }
 
 export interface ClipboardOptions {
